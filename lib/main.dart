@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,17 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Rendimiento Fácil'),
-        ),
-        body: const Center(
-          child: Text(
-            'App funcionando 🚀',
-            style: TextStyle(fontSize: 20),
-          ),
-        ),
-      ),
+      title: 'Calculadora de Rendimiento',
+      home: const HomeScreen(),
     );
   }
 }
